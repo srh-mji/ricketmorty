@@ -9,22 +9,7 @@
 <script lang="js">
 
   export default  {
-    name: 'Header',
-    props: [],
-    mounted () {
-
-    },
-    data () {
-      return {
-
-      }
-    },
-    methods: {
-
-    },
-    computed: {
-
-    }
+    name: 'Header'
 }
 
 
