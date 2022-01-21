@@ -1,5 +1,22 @@
 <template>
   <div class="locations">
-    <h1>This is an locations page</h1>
+    <Header/>
+    <CardLocations/>
+    <Footer/>
   </div>
 </template>
+
+<script>
+import Header from '@/components/Header.vue';
+import CardLocations from '@/components/CardLocations.vue';
+import Footer from '@/components/Footer.vue';
+
+export default {
+  name: 'Locations',
+  components: {
+    Header,
+    CardLocations,
+    Footer
+  }
+}
+</script>

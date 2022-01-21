@@ -9,7 +9,7 @@
 <script lang="js">
 
   export default  {
-    name: 'footer',
+    name: 'Footer',
     props: [],
     mounted () {
 

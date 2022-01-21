@@ -9,7 +9,7 @@
 <script lang="js">
 
   export default  {
-    name: 'card-episodes',
+    name: 'CardEpisodes',
     props: [],
     mounted () {
 

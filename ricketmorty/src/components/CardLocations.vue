@@ -1,7 +1,7 @@
 <template lang="html">
 
-  <section class="home">
-    <h1>home Component</h1>
+  <section class="card-locations">
+    <h1>card-locations Component</h1>
   </section>
 
 </template>
@@ -9,7 +9,7 @@
 <script lang="js">
 
   export default  {
-    name: 'home',
+    name: 'CardLocations',
     props: [],
     mounted () {
 
@@ -31,7 +31,7 @@
 </script>
 
 <style scoped lang="scss">
-  .home {
+  .card-locations {
 
   }
 </style>

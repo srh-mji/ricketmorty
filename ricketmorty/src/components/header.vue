@@ -9,7 +9,7 @@
 <script lang="js">
 
   export default  {
-    name: 'header',
+    name: 'Header',
     props: [],
     mounted () {
 

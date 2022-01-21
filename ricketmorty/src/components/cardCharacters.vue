@@ -9,7 +9,7 @@
 <script lang="js">
 
   export default  {
-    name: 'card-characters',
+    name: 'CardCharacters',
     props: [],
     mounted () {
 
