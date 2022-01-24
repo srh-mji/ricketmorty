@@ -1,15 +1,28 @@
-<template lang="html">
+<template>
 
-  <section class="card-episodes">
-    <h1>Episodes</h1>
-    <div v-for="episode in episodes" :key="episode">
-     <p> {{episode.name}}</p>
+  <div class="card-episodes">
+    <div class="flex" v-for="episode in episodes" :key="episode">
+      <article class="cardEpisode">
+        <div>
+          <!-- url/img? -->
+        </div>
+        <div class="cardEpisode_Content">
+          <div class="section">
+            <h2>{{episode.name}}</h2>
+            <span class="episode">{{episode.episode}}</span>
+          </div>
+          <div class="section">
+            <span class="text-gray">Épisode sorti le:</span>
+            <span>{{episode.air_date}}</span>
+          </div>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
 
 </template>
 
-<script lang="js">
+<script>
 import axios from 'axios';
   export default  {
     name: 'CardEpisodes',
@@ -33,8 +46,22 @@ import axios from 'axios';
 
 </script>
 
-<style scoped lang="scss">
+<style scoped>
   .card-episodes {
-
+    background-color:#24282F;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cardEpisode {
+    width: 600px;
+    height: 220px;
+    display: flex;
+    background: rgb(60, 62, 68);
+    border-radius: 10px;
+    margin: 12px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px;
   }
 </style>

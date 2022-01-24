@@ -1,15 +1,31 @@
-<template lang="html">
+<template>
 
-  <section class="card-characters">
-    <h1>Personnages</h1>
-    <div v-for="character in characters" :key="character">
-     <p> {{character.name}}</p>
+<div class="card-characters">
+    <div class="flex" v-for="character in characters" :key="character">
+      <article class="cardCharacter">
+        <div>
+          <p>{{character.image}}</p>
+        </div>
+        <div class="cardCharacter_Content">
+          <div class="section">
+            <h2>{{character.name}}</h2>
+            <span class="status">{{character.status}}</span>
+          </div>
+          <div class="section">
+            <span class="text-gray">Espèce</span>
+            <span>{{character.species}}</span>
+          </div>
+          <div class="section">
+            <span class="text-gray">Dernier lieu vu:</span>
+            <span>{{character.location.name}}</span>
+          </div>
+        </div>
+      </article>
     </div>
-  </section>
-
+  </div>
 </template>
 
-<script lang="js">
+<script>
 import axios from 'axios';
   export default  {
     name: 'CardCharacters',
@@ -34,7 +50,21 @@ import axios from 'axios';
 </script>
 
 <style scoped lang="scss">
-  .card-characters {
-
+    .card-characters {
+    background-color:#24282F;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cardCharacter {
+    width: 600px;
+    height: 220px;
+    display: flex;
+    background: rgb(60, 62, 68);
+    border-radius: 10px;
+    margin: 12px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px;
   }
 </style>

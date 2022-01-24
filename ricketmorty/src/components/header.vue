@@ -1,8 +1,6 @@
 <template>
 <header class="header">
   <router-link to="/">  <img class="logo" src="../assets/ricketmorty.png" alt="Logo"></router-link>
-  <div class="dropdown">
-    <!-- <a class="boutonmenuprincipal"><i class="fas fa-bars"></i></a> -->
     <nav role="dropdown-child">
        <ul id="menu">
         <li class="link link_Homepage"> <router-link to="/">  Accueil</router-link></li>
@@ -11,7 +9,6 @@
         <li class="btn"> <router-link to="/about">À propos</router-link></li>
       </ul>
     </nav>
-  </div> 
 </header>
 </template>
 
@@ -52,18 +49,18 @@ li {
 }
 
 .link a:hover{
-  color:#3E9F88;
+  color:#F58217;
 }
 
 .btn {
-  border: 1px solid #3E9F88;
+  border: 2px solid #F58217;
   background-color: transparent;
   border-radius: 10px;
   padding: 10px;
   transition: background-color 0.3s ease;
 }
 .btn:hover{
-  background-color: #3E9F88;
+  background-color: #F58217;
   color:white;
 }
 a {
@@ -73,6 +70,7 @@ a {
 i {
   display:none;
 }
+
 @media (max-width: 630px) {
   .header {
       font-size: 16px;
