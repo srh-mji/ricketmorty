@@ -9,10 +9,6 @@
     margin:0;
     padding:0;
   }
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
   #app {
     font-family:Arial, Helvetica, sans-serif;
   }

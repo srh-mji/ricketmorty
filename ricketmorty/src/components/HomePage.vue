@@ -1,7 +1,7 @@
 <template lang="html">
 
   <section class="home">
-    <h1>home Component</h1>
+    <h1>Rick et Morty</h1>
   </section>
 
 </template>
@@ -10,26 +10,18 @@
 
   export default  {
     name: 'HomePage',
-    props: [],
-    mounted () {
-    },
-    data () {
-      return {
-
-      }
-    },
-    methods: {
-    },
-    computed: {
-
-    }
 }
 
 
 </script>
 
 <style scoped lang="scss">
+  h1{
+    margin:0;
+  }
   .home {
-
+    font-size: 40px;
+    height: 150px;;
+    background-image: url(../assets/background.png);
   }
 </style>
