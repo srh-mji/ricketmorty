@@ -3,7 +3,7 @@
   <router-link to="/">  <img class="logo" src="../assets/ricketmorty.png" alt="Logo"></router-link>
     <nav role="dropdown-child">
        <ul id="menu">
-        <li class="link link_Homepage"> <router-link to="/">  Accueil</router-link></li>
+        <li class="link link_Homepage"> <router-link to="/">Épisodes</router-link></li>
         <li class="link"> <router-link to="/characters">Personnages</router-link></li>
         <li class="link"><router-link to="/locations">Lieux</router-link></li>
         <li class="btn"> <router-link to="/about">À propos</router-link></li>
