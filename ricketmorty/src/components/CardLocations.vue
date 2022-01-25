@@ -1,18 +1,25 @@
 <template>
     <div class="card-locations">
-    <div class="flex" v-for="location in locations" :key="location">
+    <div class="flex">
+      <div  class="cardLocationVfor" v-for="location in locations" :key="location">
       <article class="cardLocation">
         <div class="cardLocation_Content">
           <div class="section">
-            <h2>{{location.name}}</h2>
+           <span class="text-gray">Lieu</span>
+           <h2>{{location.name}}</h2>
+           <hr>
+           <div class="section">
+            <span class="text-gray">Type de lieu: <br> </span>
             <span class="type">{{location.type}}</span>
           </div>
-          <div class="section">
-            <span class="text-gray">Dimension où est situé le lieu:</span>
+           <div class="section">
+            <span class="text-gray">Dimension où est situé le lieu: <br> </span>
             <span>{{location.dimension}}</span>
           </div>
         </div>
+        </div>
       </article>
+    </div>
     </div>
   </div>
 </template>
@@ -49,14 +56,54 @@ import axios from 'axios';
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width:1600px;
+    margin:auto;
   }
   .cardLocation {
-    width: 600px;
+    max-width: 600px;
+    width:500px;
     height: 220px;
     display: flex;
     background: rgb(60, 62, 68);
     border-radius: 10px;
     margin: 12px;
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px;
+    color: white;
+    font-weight: 600;
+  }
+  .text-gray {
+    color: rgb(158, 158, 158);
+  }
+
+  .section {
+    line-height: 28px;
+  }
+  h2 {
+    margin:0;
+    font-size:28px
+  }
+  .cardLocation_Content {
+    padding-top:15px;
+    padding-left:20px;
+  }
+  @media (max-width: 560px) {
+    .cardLocation {
+    width:320px;
+    height: 240px;
+    margin:0;
+    margin-top:20px;
+    margin-bottom:20px;
+
+  }
+  .cardLocationVfor{
+    width:320px;
+  }
+
+  hr {
+    width:200px;
+    margin:0;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
   }
 </style>
