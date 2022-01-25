@@ -10,13 +10,12 @@
            <hr>
            <div class="section">
             <span class="text-gray">Type de lieu: <br> </span>
-            <span class="type">{{location.type}}</span>
-          </div>
-           <div class="section">
+            <span class="type">{{location.type}} <br> </span>
             <span class="text-gray">Dimension où est situé le lieu: <br> </span>
             <span>{{location.dimension}}</span>
           </div>
         </div>
+        <router-link to="/residents"><span class="btn">Habitants</span></router-link>
         </div>
       </article>
     </div>
@@ -49,6 +48,10 @@ import axios from 'axios';
 </script>
 
 <style scoped>
+a {
+  color: inherit;
+  text-decoration: none;
+}
   .card-locations {
     background-color:#24282F;
   }
@@ -62,7 +65,8 @@ import axios from 'axios';
   .cardLocation {
     max-width: 600px;
     width:500px;
-    height: 220px;
+    height: auto;
+    padding-bottom:30px;
     display: flex;
     background: rgb(60, 62, 68);
     border-radius: 10px;
@@ -77,19 +81,32 @@ import axios from 'axios';
 
   .section {
     line-height: 28px;
+    margin-bottom:20px;
   }
   h2 {
     margin:0;
-    font-size:28px
+    font-size:28px;
   }
   .cardLocation_Content {
     padding-top:15px;
     padding-left:20px;
   }
+  .btn {
+    align-items: flex-end;
+  border: 2px solid #F58217;
+  background-color: #F58217;
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover{
+  background-color: #FAB915;
+  border: 2px solid #FAB915;
+  color:white;
+}
   @media (max-width: 560px) {
     .cardLocation {
     width:320px;
-    height: 240px;
     margin:0;
     margin-top:20px;
     margin-bottom:20px;

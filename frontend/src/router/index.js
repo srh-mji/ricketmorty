@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Characters from '../views/Characters.vue'
 import Locations from '../views/Locations.vue'
+import Residents from '../views/Residents.vue'
 
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
     path: '/locations',
     name: 'Locations',
     component: Locations
+  },
+  {
+    path: '/residents',
+    name: 'Residents',
+    component: Residents
   }
 ]
 

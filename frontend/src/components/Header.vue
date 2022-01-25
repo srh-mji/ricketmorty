@@ -6,7 +6,7 @@
         <li class="link link_Homepage"> <router-link to="/">Épisodes</router-link></li>
         <li class="link"> <router-link to="/characters">Personnages</router-link></li>
         <li class="link"><router-link to="/locations">Lieux</router-link></li>
-        <li class="btn"> <router-link to="/about">À propos</router-link></li>
+        <router-link to="/about"><li class="btn">À propos</li></router-link>
       </ul>
     </nav>
 </header>
