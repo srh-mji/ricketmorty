@@ -8,7 +8,7 @@ const helmet = require("helmet");
 const path = require('path');
 
 // // Routes declaration
-const userRoutes = require('./routes/user');
+const urlRoutes = require('./routes/url');
 
 // Create express application
 const app = express();
@@ -31,7 +31,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 
 // // Middleware transmit requests to these urls to the corresponding routes
-app.use('/api/user', userRoutes);
+app.use('/api/url', urlRoutes);
 
 // Export of the express application for declaration in server.js
 module.exports = app;

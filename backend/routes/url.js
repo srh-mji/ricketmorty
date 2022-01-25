@@ -9,6 +9,7 @@ const urlCtrl = require('../controllers/url');
 // Add middleware
 
 // Creation of the different routes of the API
-router.post('/connectedAccount', urlCtrl.getUrl );
+router.post('/', urlCtrl.getUrl );
+router.get('/', urlCtrl.getUrl );
 
 module.exports = router;
